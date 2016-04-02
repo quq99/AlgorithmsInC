@@ -9,10 +9,10 @@ main()
 	while(scanf("%d %d", &p, &q) == 2)
 	{
 		if (id[p] == id[q])
-			{
+		{
 			printf("They are already connected!\n\n");
 			continue;
-			}
+		}
 		for (i = 0, t = id[p]; i < N; i++)
 		{
 			if(id[i] == t)
