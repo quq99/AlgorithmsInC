@@ -8,11 +8,6 @@ main()
 		{id[i] = i;}
 	while(scanf("%d %d", &p, &q) == 2)
 	{
-		if (id[p] == id[q])
-		{
-			printf("They are already connected!\n\n");
-			continue;
-		}
 		for(i=p; i != id[i]; i = id[i])
 		for(j=q; j != id[j]; j = id[j])
 			if(i == j) continue;
